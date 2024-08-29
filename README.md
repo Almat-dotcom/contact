@@ -25,3 +25,8 @@ Here is an example of how to configure your database in the application.properti
 spring.datasource.url=jdbc:postgresql://localhost:5433/contact
 spring.datasource.username=your_username
 spring.datasource.password=your_password
+
+After running the project, you can access the following links to check the API endpoints:
+
+- **Swagger UI**: [http://localhost:8080/swagger-ui/index.html](http://localhost:8080/swagger-ui/index.html)
+ 
