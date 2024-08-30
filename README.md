@@ -17,6 +17,34 @@
 - Swagger (Springdoc OpenAPI)
 - Lombok
 
+## API
+
+- Add a New Customer 
+  POST /api/customers
+  {
+  "name": "This is Sparta"
+  }
+
+- Add a New Contact for a Customer
+  POST /api/contacts
+  {
+  "customerId": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+  "contactType": "EMAIL",
+  "value": "sparta@example.com"
+  }
+
+- Retrieve a List of All Customers
+  GET /api/customers
+  Pageable
+
+- Retrieve Detailed Information About a Specific Customer by ID
+  GET /api/customers/{customerId}
+
+- Retrieve a List of Contacts for a Specific Customer
+  GET /api/contacts/{customerId}
+
+- Retrieve a List of Contacts of a Specific Type for a Specific Customer
+  GET /api/contacts/{customerId}/type/{type}
 
 You need to create your own database in PgAdmin or any other database management tool, or use a local database.
 
